@@ -1,0 +1,25 @@
+name: 'Keel Webhook'
+author: 'Koray Koska'
+branding:
+  icon: 'message-square'
+  color: 'gray-dark'
+description: 'Notify Keel about new container images.'
+inputs:
+  name:
+    description: 'The name (or JSON array of names) of the image which was updated. Should include the full registry. May include the tag.'
+    required: true
+  tag:
+    description: 'The tag (or array of tags) of the image which was updated. Optional if the name already includes the tag.'
+    required: false
+  keel_webhook_url:
+    description: 'The webhook url of your keel installation.'
+    required: true
+  keel_webhook_auth_username:
+    description: 'The basic auth username of your keel installation.'
+    required: false
+  keel_webhook_auth_password:
+    description: 'The basic auth password of your keel installation.'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
