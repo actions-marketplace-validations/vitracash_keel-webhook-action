@@ -7,8 +7,8 @@ Sends a webhook notification to a Keel instance on Kubernetes.
 Retagging a Github sha tag to latest.
 
 ```yaml
-- name: Retag to latest
-  uses: VitraCash/keel-webhook-action@0.1.1
+- name: Notify Kube Cluster about changes
+  uses: VitraCash/keel-webhook-action@0.1.0
   with:
     name: '["vitracash/service1", "vitracash/service2"]'
     tag: '["latest", "staging"]'
