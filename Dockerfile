@@ -18,4 +18,4 @@ RUN npm install
 
 COPY . .
 
-ENTRYPOINT ["node", "main.js"]
+ENTRYPOINT ["node", "/usr/src/app/main.js"]
