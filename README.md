@@ -8,7 +8,7 @@ Retagging a Github sha tag to latest.
 
 ```yaml
 - name: Notify Kube Cluster about changes
-  uses: VitraCash/keel-webhook-action@0.1.0
+  uses: vitracash/keel-webhook-action@0.1.1
   with:
     name: '["vitracash/service1", "vitracash/service2"]'
     tag: '["latest", "staging"]'

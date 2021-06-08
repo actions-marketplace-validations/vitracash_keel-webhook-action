@@ -1,6 +1,6 @@
 FROM node:14-alpine3.13
 
-LABEL "version"="0.1.0"
+LABEL "version"="0.1.1"
 LABEL "repository"="https://github.com/VitraCash/keel-webhook-action"
 LABEL "homepage"="https://github.com/VitraCash/keel-webhook-action"
 LABEL "maintainer"="Koray Koska <koray@koska.at>"
